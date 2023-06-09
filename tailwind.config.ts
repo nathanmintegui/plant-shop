@@ -5,8 +5,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        'dark-green': '#01370C'
-      }
+        "dark-green": "#01370C",
+        "pastel-white": "#F0F5F0",
+      },
     },
   },
   plugins: [],
