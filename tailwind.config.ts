@@ -3,7 +3,11 @@ import { type Config } from "tailwindcss";
 export default {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'dark-green': '#01370C'
+      }
+    },
   },
   plugins: [],
 } satisfies Config;
