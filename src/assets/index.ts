@@ -13,6 +13,11 @@ import visaCard from "./visa-card.png";
 import maexCard from "./maex-card.png";
 import masterCard from "./master-card.png";
 import rupayCard from "./rupay-card.png";
+import facebookIcon from "./facebook.png";
+import instagramIcon from "./instagram.png";
+import twitterIcon from "./twitter.png";
+import compantBadge from "./compant-badge.png";
+import papLogoFooter from "./pap-logo-footer.png";
 
 export {
   cartIcon,
@@ -30,4 +35,9 @@ export {
   maexCard,
   masterCard,
   rupayCard,
+  facebookIcon,
+  instagramIcon,
+  twitterIcon,
+  compantBadge,
+  papLogoFooter,
 };
