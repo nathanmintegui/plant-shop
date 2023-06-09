@@ -2,6 +2,7 @@ import { type NextPage } from "next";
 import Image from "next/image";
 import { heroBanner } from "~/assets";
 import { Header } from "~/components/header";
+import { MiniFooter } from "~/components/miniFooter";
 import { MiniHeader } from "~/components/miniHeader";
 import { PlantCategories } from "~/components/plantCategories";
 
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
         className="w-screen"
       />
       <PlantCategories />
+      <MiniFooter />
     </div>
   );
 };

@@ -9,6 +9,10 @@ import creepersCategory from "./creepers-category.png";
 import succulentsCategory from "./succulents-category.png";
 import seedsCategory from "./seeds-category.png";
 import giftingCategory from "./gifting-category.png";
+import visaCard from "./visa-card.png";
+import maexCard from "./maex-card.png";
+import masterCard from "./master-card.png";
+import rupayCard from "./rupay-card.png";
 
 export {
   cartIcon,
@@ -22,4 +26,8 @@ export {
   succulentsCategory,
   seedsCategory,
   giftingCategory,
+  visaCard,
+  maexCard,
+  masterCard,
+  rupayCard,
 };
