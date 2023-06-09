@@ -1,6 +1,7 @@
 import { type NextPage } from "next";
 import Image from "next/image";
 import { heroBanner } from "~/assets";
+import { BestSelling } from "~/components/bestSelling";
 import { Footer } from "~/components/footer";
 import { Header } from "~/components/header";
 import { MiniFooter } from "~/components/miniFooter";
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
         className="w-screen"
       />
       <PlantCategories />
+      <BestSelling />
       <Footer />
       <MiniFooter />
     </div>

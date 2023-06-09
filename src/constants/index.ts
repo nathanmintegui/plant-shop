@@ -1,10 +1,13 @@
 import type { StaticImageData } from "next/image";
 
 import {
+  airPureBestSelling,
   bonsaiCategory,
   cactusCategory,
   creepersCategory,
+  floweringBestSelling,
   giftingCategory,
+  indoorBestSelling,
   seedsCategory,
   succulentsCategory,
 } from "~/assets";
@@ -45,5 +48,23 @@ export const categories: IProps[] = [
     image: giftingCategory,
     name: "GIFTING",
     alt: "gifting plant",
+  },
+];
+
+export const bestSelling: IProps[] = [
+  {
+    image: indoorBestSelling,
+    name: "INDOOR PLANTS",
+    alt: "indoor plants",
+  },
+  {
+    image: airPureBestSelling,
+    name: "AIR PURIFYING PLANTS",
+    alt: "air purifying plants",
+  },
+  {
+    image: floweringBestSelling,
+    name: "FLOWERING PLANTS",
+    alt: "flowering plants",
   },
 ];

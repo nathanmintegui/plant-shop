@@ -18,6 +18,9 @@ import instagramIcon from "./instagram.png";
 import twitterIcon from "./twitter.png";
 import compantBadge from "./compant-badge.png";
 import papLogoFooter from "./pap-logo-footer.png";
+import indoorBestSelling from "./indoor-best-selling.png";
+import airPureBestSelling from "./air-pure-best-selling.png";
+import floweringBestSelling from "./flowering-best-selling.png";
 
 export {
   cartIcon,
@@ -40,4 +43,7 @@ export {
   twitterIcon,
   compantBadge,
   papLogoFooter,
+  indoorBestSelling,
+  airPureBestSelling,
+  floweringBestSelling,
 };
