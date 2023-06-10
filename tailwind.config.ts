@@ -9,6 +9,7 @@ export default {
         "pastel-white": "#F0F5F0",
         "light-green": "#436E35",
         "button-green": "#3B823E",
+        "tittle-black": "#343434",
       },
       fontFamily: {
         unna: ["var(--font-unna)"],
