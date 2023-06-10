@@ -10,6 +10,9 @@ export default {
         "light-green": "#436E35",
         "button-green": "#3B823E",
       },
+      fontFamily: {
+        unna: ["var(--font-unna)"],
+      },
     },
   },
   plugins: [],
