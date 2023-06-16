@@ -18,7 +18,7 @@ export const Card: React.FC<CardProps> = ({
 }: CardProps) => {
   return (
     <div className="mb-5 flex h-80 w-96 flex-col items-center justify-center rounded-2xl bg-white">
-      <div className="border border-red-600">
+      <div className="">
         <Image
           src={image}
           alt={alt}
