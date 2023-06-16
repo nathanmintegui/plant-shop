@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: #f0f5f0;
+}
+
 .arrow {
   box-sizing: border-box;
   height: 8px;
