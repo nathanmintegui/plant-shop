@@ -7,6 +7,7 @@ import { Header } from "~/components/header";
 import { MiniFooter } from "~/components/miniFooter";
 import { MiniHeader } from "~/components/miniHeader";
 import { PlantCategories } from "~/components/plantCategories";
+import { TrendingPlants } from "~/components/trendingPlants";
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
       />
       <PlantCategories />
       <BestSelling />
+      <TrendingPlants />
       <Footer />
       <MiniFooter />
     </div>
