@@ -8,6 +8,7 @@ import { HotSale } from "~/components/hotSale";
 import { MiniFooter } from "~/components/miniFooter";
 import { MiniHeader } from "~/components/miniHeader";
 import { PlantCategories } from "~/components/plantCategories";
+import { Planters } from "~/components/planters";
 import { Services } from "~/components/services";
 import { TrendingPlants } from "~/components/trendingPlants";
 
@@ -24,7 +25,8 @@ const Home: NextPage = () => {
       <PlantCategories />
       <BestSelling />
       <TrendingPlants />
-      <HotSale/>
+      <HotSale />
+      <Planters />
       <Services />
       <Footer />
       <MiniFooter />
