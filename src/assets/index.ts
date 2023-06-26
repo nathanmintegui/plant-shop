@@ -21,6 +21,8 @@ import papLogoFooter from "./pap-logo-footer.png";
 import indoorBestSelling from "./indoor-best-selling.png";
 import airPureBestSelling from "./air-pure-best-selling.png";
 import floweringBestSelling from "./flowering-best-selling.png";
+import blogCardFirstVariaton from "./blog-card-1.png";
+import blogCardSecondVariation from "./blog-card-2.png";
 
 export {
   cartIcon,
@@ -46,4 +48,6 @@ export {
   indoorBestSelling,
   airPureBestSelling,
   floweringBestSelling,
+  blogCardFirstVariaton,
+  blogCardSecondVariation,
 };
