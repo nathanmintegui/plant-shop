@@ -2,6 +2,8 @@ import type { StaticImageData } from "next/image";
 
 import {
   airPureBestSelling,
+  blogCardFirstVariaton,
+  blogCardSecondVariation,
   bonsaiCategory,
   cactusCategory,
   creepersCategory,
@@ -12,7 +14,7 @@ import {
   succulentsCategory,
 } from "~/assets";
 
-interface IProps {
+export interface IProps {
   image: StaticImageData;
   name: string;
   alt: string;
@@ -66,5 +68,18 @@ export const bestSelling: IProps[] = [
     image: floweringBestSelling,
     name: "FLOWERING PLANTS",
     alt: "flowering plants",
+  },
+];
+
+export const blogs = [
+  {
+    image: blogCardFirstVariaton,
+    name: "8 Best Low Maintenance Plants For a Busy Home",
+    alt: "Person writing on a paper",
+  },
+  {
+    image: blogCardSecondVariation,
+    name: "Air Purifying Plants You Should Take Home Today",
+    alt: "Paper with a pen on a table and plants around",
   },
 ];
