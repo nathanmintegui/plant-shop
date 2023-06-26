@@ -10,7 +10,6 @@ interface IProps {
   name: string;
   alt: string;
 }
-
 export const BestSelling: React.FC = () => {
   const Card: React.FC<IProps> = ({ image, name, alt }: IProps) => {
     return (
