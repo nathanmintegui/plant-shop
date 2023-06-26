@@ -1,7 +1,10 @@
 import { type NextPage } from "next";
 import Image from "next/image";
+
 import { heroBanner } from "~/assets";
+
 import { BestSelling } from "~/components/bestSelling";
+import { Blogs } from "~/components/blogs";
 import { Footer } from "~/components/footer";
 import { Header } from "~/components/header";
 import { HotSale } from "~/components/hotSale";
@@ -25,6 +28,7 @@ const Home: NextPage = () => {
       <PlantCategories />
       <BestSelling />
       <TrendingPlants />
+      <Blogs />
       <HotSale />
       <Planters />
       <Services />
