@@ -23,6 +23,13 @@ import airPureBestSelling from "./air-pure-best-selling.png";
 import floweringBestSelling from "./flowering-best-selling.png";
 import blogCardFirstVariaton from "./blog-card-1.png";
 import blogCardSecondVariation from "./blog-card-2.png";
+import celeb1 from "./celeb-1.png";
+import celeb2 from "./celeb-2.png";
+import celeb3 from "./celeb-3.png";
+import celeb4 from "./celeb-4.png";
+import celeb5 from "./celeb-5.png";
+import celeb6 from "./celeb-6.png";
+import celeb7 from "./celeb-7.png";
 
 export {
   cartIcon,
@@ -50,4 +57,11 @@ export {
   floweringBestSelling,
   blogCardFirstVariaton,
   blogCardSecondVariation,
+  celeb1,
+  celeb2,
+  celeb3,
+  celeb4,
+  celeb5,
+  celeb6,
+  celeb7,
 };
