@@ -5,6 +5,7 @@ import { heroBanner } from "~/assets";
 
 import { BestSelling } from "~/components/bestSelling";
 import { Blogs } from "~/components/blogs";
+import { Celebs } from "~/components/celebs";
 import { Footer } from "~/components/footer";
 import { Header } from "~/components/header";
 import { HotSale } from "~/components/hotSale";
@@ -32,6 +33,7 @@ const Home: NextPage = () => {
       <HotSale />
       <Planters />
       <Services />
+      <Celebs />
       <Footer />
       <MiniFooter />
     </div>
