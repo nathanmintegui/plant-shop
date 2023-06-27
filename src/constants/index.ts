@@ -6,6 +6,13 @@ import {
   blogCardSecondVariation,
   bonsaiCategory,
   cactusCategory,
+  celeb1,
+  celeb2,
+  celeb3,
+  celeb4,
+  celeb5,
+  celeb6,
+  celeb7,
   creepersCategory,
   floweringBestSelling,
   giftingCategory,
@@ -81,5 +88,43 @@ export const blogs = [
     image: blogCardSecondVariation,
     name: "Air Purifying Plants You Should Take Home Today",
     alt: "Paper with a pen on a table and plants around",
+  },
+];
+
+export const celebs: IProps[] = [
+  {
+    image: celeb1,
+    name: "Celeb 1",
+    alt: "Celeb 1",
+  },
+  {
+    image: celeb2,
+    name: "Celeb 2",
+    alt: "Celeb 2",
+  },
+  {
+    image: celeb3,
+    name: "Celeb 3",
+    alt: "Celeb 3",
+  },
+  {
+    image: celeb4,
+    name: "Celeb 4",
+    alt: "Celeb 4",
+  },
+  {
+    image: celeb5,
+    name: "Celeb 5",
+    alt: "Celeb 5",
+  },
+  {
+    image: celeb6,
+    name: "Celeb 6",
+    alt: "Celeb 6",
+  },
+  {
+    image: celeb7,
+    name: "Celeb 7",
+    alt: "Celeb 7",
   },
 ];
