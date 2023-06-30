@@ -25,3 +25,12 @@ body {
   margin: 1.5em 0;
   padding: 1em;
 }
+
+.pressed-arrow {
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+.pressed-arrow:active {
+  transform: scale(0.5);
+}
