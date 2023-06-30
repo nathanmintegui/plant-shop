@@ -44,7 +44,7 @@ export const TrendingPlants: React.FC = () => {
 
   return (
     <Container className="flex flex-col">
-      <Tittle tittle="Trending Plants" />
+      <Tittle tittle="Trending Plants" position="left" />
       <div className="flex flex-wrap justify-between">
         {data.map((item) => (
           <Card
