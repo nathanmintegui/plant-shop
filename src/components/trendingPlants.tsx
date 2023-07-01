@@ -47,14 +47,7 @@ export const TrendingPlants: React.FC = () => {
       <Tittle tittle="Trending Plants" position="left" />
       <div className="flex flex-wrap justify-between">
         {data.map((item) => (
-          <Card
-            key={item.id}
-            image={item.image}
-            alt="alt"
-            name={item.name}
-            price={item.price}
-            hasDescount={false}
-          />
+          <Card key={item.id} {...item} />
         ))}
       </div>
     </Container>
