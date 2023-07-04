@@ -5,7 +5,8 @@ import { useState } from "react";
 const DEFAULT_PRODUCT_QUANTITY = 1 as const;
 const INITIAL_PRODUCT_QUANTITY = 1 as const;
 
-const ProductSection = () => {
+const ProductSection = ({ params }) => {
+  console.log(params);
   const [quantity, setQuantity] = useState<number>(INITIAL_PRODUCT_QUANTITY);
 
   const handleIncreaseQuantityClick = () => {
