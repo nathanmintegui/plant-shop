@@ -1,21 +1,9 @@
 import { useCallback, useEffect, useState } from "react";
 
-import type { StaticImageData } from "next/image";
-
 import { Container } from "./container";
 import { Card } from "./card";
 import { Tittle } from "./sectionTittle";
-
-type Data = {
-  id: number;
-  name: string;
-  image: StaticImageData;
-  description: string;
-  generalCategory: number;
-  specificCategory: number;
-  price: number;
-  isHotSale: boolean;
-};
+import { type Data } from "~/types/types.d";
 
 const fetchData = async (): Promise<Data[]> => {
   const res = await fetch(
