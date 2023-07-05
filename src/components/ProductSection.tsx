@@ -1,13 +1,33 @@
 import Image from "next/image";
 import { Container } from "./container";
 import { useState } from "react";
+import { arrowLeft, arrowRight } from "~/assets";
 
 const DEFAULT_PRODUCT_QUANTITY = 1 as const;
 const INITIAL_PRODUCT_QUANTITY = 1 as const;
 
-const ProductSection = ({ params }) => {
-  console.log(params);
+type ParamsProps = {
+  params: Props;
+};
+
+type Props = {
+  productId: number;
+  produtName: string;
+  productImage: string;
+  productDescription: string;
+  productPrice: number;
+};
+
+const ProductSection = ({ params }: ParamsProps) => {
+  const images = [
+    params.productImage,
+    params.productImage,
+    params.productImage,
+    params.productImage,
+  ];
+
   const [quantity, setQuantity] = useState<number>(INITIAL_PRODUCT_QUANTITY);
+  const [deliveryTime, setDeliveryTime] = useState<boolean>(false);
 
   const handleIncreaseQuantityClick = () => {
     setQuantity((olderQuantity) => olderQuantity + DEFAULT_PRODUCT_QUANTITY);
@@ -21,26 +41,59 @@ const ProductSection = ({ params }) => {
     }
   };
 
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setDeliveryTime(!deliveryTime);
+  };
+
+  const renderDeliveryPrevistion = (deliveryTime: boolean) => {
+    if (!deliveryTime) {
+      return;
+    }
+
+    return (
+      <div className="mt-5 rounded-lg border border-gray-700 p-2 text-gray-700">
+        <p className="w-5/12">
+          Delivery available for this loaction. Typically delivered in 5-7
+          working days. Standard Delivery.
+        </p>
+      </div>
+    );
+  };
+
   return (
-    <Container className="mb-16 flex justify-between">
-      <section className="flex flex-col">
-        <Image src={""} alt="" className="" />
+    <Container className="mb-16 flex w-screen">
+      <section className="flex w-1/2 flex-col">
+        <Image
+          src={params.productImage}
+          alt=""
+          className=""
+          width={250}
+          height={250}
+        />
         <div className="flex">
-          <Image src={""} alt="" className="" />
-          <Image src={""} alt="" className="" />
-          <Image src={""} alt="" className="" />
-          <Image src={""} alt="" className="" />
-          <Image src={""} alt="" className="" />
-          <Image src={""} alt="" className="" />
+          <Image src={arrowLeft} alt="arrow left" />
+          {images.map((image, index) => (
+            <Image
+              key={index}
+              src={image}
+              alt=""
+              className=""
+              width={100}
+              height={100}
+            />
+          ))}
+          <Image src={arrowRight} alt="arrow right" />
         </div>
       </section>
 
-      <section>
-        <h1 className="font-sans text-3xl font-bold">Hoya Linearis</h1>
-        <p className="font-sans text-3xl font-normal">$ 350</p>
+      <section className="w-1/2">
+        <h1 className="font-sans text-3xl font-bold">{params.produtName}</h1>
+        <p className="my-3 font-sans text-3xl font-normal">
+          $ {params.productPrice}
+        </p>
         <p className="font-sans text-xl font-normal text-gray-500">
-          With rounded light green and white-striped leaves, the Calathea
-          Orbifolia is a decorative and unique houseplant.
+          {params.productDescription}
         </p>
         <div className="my-10 flex gap-16">
           <div className="flex items-center">
@@ -77,15 +130,19 @@ const ProductSection = ({ params }) => {
           Add to Cart
         </button>
         <p className="mt-10 text-xl font-semibold text-black">Delivery</p>
-        <p className="text-gray-500">
+        <p className="mb-3 text-gray-500">
           Enter your Pincode to check delivery time.
         </p>
-        <form className="flex">
-          <input type="text" />
+        <form className="flex" onSubmit={handleSubmit}>
+          <input
+            type="text"
+            className="w-2/12 rounded border-2 border-black bg-transparent p-1"
+          />
           <button className="pl-5 text-xl font-semibold text-green-700">
             CHECK
           </button>
         </form>
+        {renderDeliveryPrevistion(deliveryTime)}
       </section>
     </Container>
   );
