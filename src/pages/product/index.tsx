@@ -6,12 +6,9 @@ import { Footer } from "~/components/footer";
 import { Header } from "~/components/header";
 import { MiniFooter } from "~/components/miniFooter";
 import { MiniHeader } from "~/components/miniHeader";
+import YouMayAlsoLike from "~/components/youMayAlsoLike";
 
 const ProductDetail = () => {
-  return <></>;
-};
-
-const YouMayAlsoLike = () => {
   return <></>;
 };
 
