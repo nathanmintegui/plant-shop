@@ -1,21 +1,9 @@
 import { useCallback, useEffect, useState } from "react";
 
-import type { StaticImageData } from "next/image";
-
 import { Container } from "./container";
 import { Card } from "./card";
 import { Tittle } from "./sectionTittle";
-
-type Data = {
-  id: number;
-  name: string;
-  image: StaticImageData;
-  description: string;
-  generalCategory: number;
-  specificCategory: number;
-  price: number;
-  isHotSale: boolean;
-};
+import { type Data } from "~/types/types.d";
 
 const fetchData = async (): Promise<Data[]> => {
   const res = await fetch(
@@ -44,17 +32,10 @@ export const TrendingPlants: React.FC = () => {
 
   return (
     <Container className="flex flex-col">
-      <Tittle tittle="Trending Plants" />
+      <Tittle tittle="Trending Plants" position="left" />
       <div className="flex flex-wrap justify-between">
         {data.map((item) => (
-          <Card
-            key={item.id}
-            image={item.image}
-            alt="alt"
-            name={item.name}
-            price={item.price}
-            hasDescount={false}
-          />
+          <Card key={item.id} {...item} />
         ))}
       </div>
     </Container>

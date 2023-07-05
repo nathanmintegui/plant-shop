@@ -32,6 +32,7 @@ import celeb6 from "./celeb-6.png";
 import celeb7 from "./celeb-7.png";
 import arrowDown from "./arrow-down.svg";
 import arrowRight from "./arrow-right.svg";
+import arrowLeft from "./arrow-left.svg";
 
 export {
   cartIcon,
@@ -68,4 +69,5 @@ export {
   celeb7,
   arrowDown,
   arrowRight,
+  arrowLeft,
 };

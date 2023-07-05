@@ -1,9 +1,7 @@
-import type { StaticImageData } from "next/image";
-
 export type Data = {
   id: number;
   name: string;
-  image: StaticImageData;
+  image: string;
   description: string;
   generalCategory: number;
   specificCategory: number;

@@ -1,4 +1,5 @@
 import { type NextPage } from "next";
+import { useRouter } from "next/router";
 import ProductSection from "~/components/ProductSection";
 import { Container } from "~/components/container";
 import { Footer } from "~/components/footer";
@@ -15,13 +16,16 @@ const YouMayAlsoLike = () => {
 };
 
 const Product: NextPage = () => {
+  const router = useRouter();
+  const params = router.query;
+
   return (
     <div>
       <MiniHeader />
       <Header />
 
       <Container className="flex flex-col items-center">
-        <ProductSection />
+        <ProductSection params={params} />
         <ProductDetail />
         <YouMayAlsoLike />
       </Container>
