@@ -20,7 +20,7 @@ type Data = {
 
 const fetchData = async (): Promise<Data[]> => {
   const res = await fetch(
-    "http://localhost:5095/v1/hot-sales?pageNumber=0&pageSize=4"
+    "http://localhost:8088/v1/hot-sales?pageNumber=0&pageSize=4"
   );
 
   /* eslint-disable */

@@ -17,7 +17,7 @@ type DataProps = {
 
 const fetchData = async (): Promise<DataProps[]> => {
   const res = await fetch(
-    "http://localhost:8080/v1/services?pageNumber=0&pageSize=1"
+    "http://localhost:8088/v1/services?pageNumber=0&pageSize=1"
   );
 
   /* eslint-disable */
