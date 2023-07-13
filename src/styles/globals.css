@@ -26,11 +26,18 @@ body {
   padding: 1em;
 }
 
-.pressed-arrow {
+.pressed-animation {
   cursor: pointer;
   transition: 0.2s all;
 }
 
-.pressed-arrow:active {
+.pressed-animation:active {
   transform: scale(0.5);
+}
+
+.bg-section-background {
+  background-image: url("../assets/product-detail-background.png");
+  background-position: center;
+  position: relative;
+  height: 30em;
 }

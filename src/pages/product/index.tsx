@@ -6,11 +6,8 @@ import { Footer } from "~/components/footer";
 import { Header } from "~/components/header";
 import { MiniFooter } from "~/components/miniFooter";
 import { MiniHeader } from "~/components/miniHeader";
+import ProductDetail from "~/components/productDetail";
 import YouMayAlsoLike from "~/components/youMayAlsoLike";
-
-const ProductDetail = () => {
-  return <></>;
-};
 
 const Product: NextPage = () => {
   const router = useRouter();
