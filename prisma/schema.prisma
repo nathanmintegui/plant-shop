@@ -1,0 +1,48 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+enum GeneralCategoryEnum {
+  INDOOR
+  OUTDOOR
+  MEDICINAL
+}
+
+enum SpecificCategoryEnum {
+  MAIDENHAIR_FERN
+  KENTIA_PALM
+  SNAKE_PLANT
+}
+
+model plant {
+  id               String               @id @default(auto()) @map("_id") @db.ObjectId
+  name             String
+  image            String
+  price            Float
+  description      String
+  generalCategory  GeneralCategoryEnum
+  specificCategory SpecificCategoryEnum
+  isHotSale        Boolean
+}
+
+model planter {
+  id          String @id @default(auto()) @map("_id") @db.ObjectId
+  name        String
+  image       String
+  price       Float
+  description String
+}
+
+model service {
+  id              String              @id @default(auto()) @map("_id") @db.ObjectId
+  name            String
+  image           String
+  price           Float
+  description     String
+  generalCategory GeneralCategoryEnum
+}
