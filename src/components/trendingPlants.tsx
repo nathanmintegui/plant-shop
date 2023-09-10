@@ -6,9 +6,7 @@ import { Tittle } from "./sectionTittle";
 import { type Data } from "~/types/types.d";
 
 const fetchData = async (): Promise<Data[]> => {
-  const res = await fetch(
-    "http://localhost:8088/v1/trending?pageNumber=0&pageSize=8"
-  );
+  const res = await fetch("http://localhost:3000/api/plants");
 
   /* eslint-disable */
   return res.json();
