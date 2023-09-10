@@ -10,7 +10,7 @@ import { Card } from "./card";
 type Data = {
   id: number;
   name: string;
-  image: StaticImageData;
+  image: string;
   description: string;
   generalCategory: number;
   specificCategory: number;
@@ -19,9 +19,7 @@ type Data = {
 };
 
 const fetchData = async (): Promise<Data[]> => {
-  const res = await fetch(
-    "http://localhost:8088/v1/hot-sales?pageNumber=0&pageSize=4"
-  );
+  const res = await fetch("http://localhost:3000/api/hot-sales");
 
   /* eslint-disable */
   return res.json();

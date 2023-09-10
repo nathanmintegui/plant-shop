@@ -16,9 +16,7 @@ type DataProps = {
 };
 
 const fetchData = async (): Promise<DataProps[]> => {
-  const res = await fetch(
-    "http://localhost:8088/v1/services?pageNumber=0&pageSize=1"
-  );
+  const res = await fetch("http://localhost:3000/api/service");
 
   /* eslint-disable */
   return res.json();

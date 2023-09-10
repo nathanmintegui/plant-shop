@@ -6,9 +6,7 @@ import { useCallback, useEffect, useState } from "react";
 import { Card } from "./card";
 
 const fetchData = async (): Promise<Data[]> => {
-  const res = await fetch(
-    "http://localhost:8088/v1/planters?pageNumber=0&pageSize=4"
-  );
+  const res = await fetch("http://localhost:3000/api/planter");
 
   /* eslint-disable */
   return res.json();
